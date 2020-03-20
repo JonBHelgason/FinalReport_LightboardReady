@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.21)  20 MAR 2020 17:23
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.21)  20 MAR 2020 16:45
->>>>>>> master
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.21)  20 MAR 2020 18:08
 entering extended mode
 **./icad-template.tex
 (icad-template.tex
@@ -1064,7 +1060,44 @@ File: pgflibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ("C:\Users\bergu\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf-blur\tikzlibra
 ryshadows.blur.code.tex"  v1.02, 2012/12/09
 \pgfbs@fading@count=\count328
-) (icad-template.aux)
+) (icad-template.aux
+
+LaTeX Warning: Label `CN' multiply defined.
+
+
+LaTeX Warning: Label `FR' multiply defined.
+
+
+LaTeX Warning: Label `fig:matrix' multiply defined.
+
+
+LaTeX Warning: Label `PS' multiply defined.
+
+
+LaTeX Warning: Label `fig:ROCK' multiply defined.
+
+
+LaTeX Warning: Label `fig:REV' multiply defined.
+
+
+LaTeX Warning: Label `fig:scematic' multiply defined.
+
+
+LaTeX Warning: Label `fig:Sketchesofdifferentconcepts' multiply defined.
+
+
+LaTeX Warning: Label `fig:Sketchesofdifferentconcepts2' multiply defined.
+
+
+LaTeX Warning: Label `fig:Finalprodotype2' multiply defined.
+
+
+LaTeX Warning: Label `fig:pappi_1' multiply defined.
+
+
+LaTeX Warning: Label `fig:pappi_3' multiply defined.
+
+)
 \openout1 = `icad-template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
@@ -1082,8 +1115,7 @@ LaTeX Font Info:    ... okay on input line 47.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 4
 7.
-
-("C:\Users\bergu\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
+ ("C:\Users\bergu\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 47.
@@ -1135,50 +1167,50 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <18.06749> not available
-(Font)              size <17.28> substituted on input line 48.
+(Font)              size <17.28> substituted on input line 49.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <18.06749> not available
-(Font)              size <17.28> substituted on input line 48.
+(Font)              size <17.28> substituted on input line 49.
 
 [1
 
 {C:/Users/bergu/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 136.
+               Default added (so using `tbp') on input line 137.
 
 <Graphics/matrix.pdf, id=42, 542.98856pt x 428.5611pt>
 File: Graphics/matrix.pdf Graphic file (type pdf)
 <use Graphics/matrix.pdf>
-Package pdftex.def Info: Graphics/matrix.pdf  used on input line 138.
+Package pdftex.def Info: Graphics/matrix.pdf  used on input line 139.
 (pdftex.def)             Requested size: 318.66946pt x 251.52136pt.
 [2 <./Graphics/matrix.pdf>]
 <Graphics/becons.png, id=55, 359.4228pt x 314.6154pt>
 File: Graphics/becons.png Graphic file (type png)
 <use Graphics/becons.png>
-Package pdftex.def Info: Graphics/becons.png  used on input line 175.
+Package pdftex.def Info: Graphics/becons.png  used on input line 176.
 (pdftex.def)             Requested size: 318.66946pt x 278.95067pt.
 <Graphics/Revolution.png, id=57, 508.299pt x 576.9555pt>
 File: Graphics/Revolution.png Graphic file (type png)
 <use Graphics/Revolution.png>
-Package pdftex.def Info: Graphics/Revolution.png  used on input line 182.
+Package pdftex.def Info: Graphics/Revolution.png  used on input line 183.
 (pdftex.def)             Requested size: 318.66946pt x 361.72316pt.
  [3 <./Graphics/becons.png>] [4 <./Graphics/Revolution.png>]
 <Graphics/scematic.pdf, id=69, 420.61137pt x 363.27718pt>
 File: Graphics/scematic.pdf Graphic file (type pdf)
 <use Graphics/scematic.pdf>
-Package pdftex.def Info: Graphics/scematic.pdf  used on input line 269.
+Package pdftex.def Info: Graphics/scematic.pdf  used on input line 270.
 (pdftex.def)             Requested size: 318.66946pt x 275.23987pt.
 <Graphics/skissa_1.jpg, id=70, 1270.7475pt x 1084.05pt>
 File: Graphics/skissa_1.jpg Graphic file (type jpg)
 <use Graphics/skissa_1.jpg>
-Package pdftex.def Info: Graphics/skissa_1.jpg  used on input line 278.
+Package pdftex.def Info: Graphics/skissa_1.jpg  used on input line 279.
 (pdftex.def)             Requested size: 318.66946pt x 271.85544pt.
 <Graphics/skissa_2.jpg, id=71, 1084.05pt x 1178.4025pt>
 File: Graphics/skissa_2.jpg Graphic file (type jpg)
 <use Graphics/skissa_2.jpg>
-Package pdftex.def Info: Graphics/skissa_2.jpg  used on input line 283.
+Package pdftex.def Info: Graphics/skissa_2.jpg  used on input line 284.
 (pdftex.def)             Requested size: 318.66946pt x 346.40302pt.
 
 
@@ -1187,22 +1219,56 @@ pdfTeX warning: pdflatex.exe (file ./Graphics/frame2.pdf): PDF inclusion: found
 <Graphics/frame2.pdf, id=72, 800.96236pt x 656.01183pt>
 File: Graphics/frame2.pdf Graphic file (type pdf)
 <use Graphics/frame2.pdf>
-Package pdftex.def Info: Graphics/frame2.pdf  used on input line 289.
+Package pdftex.def Info: Graphics/frame2.pdf  used on input line 290.
 (pdftex.def)             Requested size: 455.24408pt x 372.85956pt.
 [5 <./Graphics/scematic.pdf>]
 <Graphics/pappi_1.jpg, id=90, 1084.05pt x 933.4875pt>
 File: Graphics/pappi_1.jpg Graphic file (type jpg)
 <use Graphics/pappi_1.jpg>
-Package pdftex.def Info: Graphics/pappi_1.jpg  used on input line 353.
+Package pdftex.def Info: Graphics/pappi_1.jpg  used on input line 354.
 (pdftex.def)             Requested size: 318.66946pt x 274.40784pt.
  [6 <./Graphics/skissa_1.jpg>]
 <Graphics/pappi_3.jpg, id=94, 744.7825pt x 1084.05pt>
 File: Graphics/pappi_3.jpg Graphic file (type jpg)
 <use Graphics/pappi_3.jpg>
-Package pdftex.def Info: Graphics/pappi_3.jpg  used on input line 359.
+Package pdftex.def Info: Graphics/pappi_3.jpg  used on input line 360.
+(pdftex.def)             Requested size: 318.66946pt x 463.84973pt.
+File: Graphics/becons.png Graphic file (type png)
+<use Graphics/becons.png>
+Package pdftex.def Info: Graphics/becons.png  used on input line 376.
+(pdftex.def)             Requested size: 318.66946pt x 278.95067pt.
+File: Graphics/Revolution.png Graphic file (type png)
+<use Graphics/Revolution.png>
+Package pdftex.def Info: Graphics/Revolution.png  used on input line 383.
+(pdftex.def)             Requested size: 318.66946pt x 361.72316pt.
+ [7 <./Graphics/skissa_2.jpg>] [8 <./Graphics/frame2.pdf>]
+File: Graphics/scematic.pdf Graphic file (type pdf)
+<use Graphics/scematic.pdf>
+Package pdftex.def Info: Graphics/scematic.pdf  used on input line 470.
+(pdftex.def)             Requested size: 318.66946pt x 275.23987pt.
+File: Graphics/skissa_1.jpg Graphic file (type jpg)
+<use Graphics/skissa_1.jpg>
+Package pdftex.def Info: Graphics/skissa_1.jpg  used on input line 479.
+(pdftex.def)             Requested size: 318.66946pt x 271.85544pt.
+File: Graphics/skissa_2.jpg Graphic file (type jpg)
+<use Graphics/skissa_2.jpg>
+Package pdftex.def Info: Graphics/skissa_2.jpg  used on input line 484.
+(pdftex.def)             Requested size: 318.66946pt x 346.40302pt.
+File: Graphics/frame2.pdf Graphic file (type pdf)
+<use Graphics/frame2.pdf>
+Package pdftex.def Info: Graphics/frame2.pdf  used on input line 490.
+(pdftex.def)             Requested size: 455.24408pt x 372.85956pt.
+ [9 <./Graphics/pappi_1.jpg>] [10 <./Graphics/pappi_3.jpg>]
+File: Graphics/pappi_1.jpg Graphic file (type jpg)
+<use Graphics/pappi_1.jpg>
+Package pdftex.def Info: Graphics/pappi_1.jpg  used on input line 554.
+(pdftex.def)             Requested size: 318.66946pt x 274.40784pt.
+File: Graphics/pappi_3.jpg Graphic file (type jpg)
+<use Graphics/pappi_3.jpg>
+Package pdftex.def Info: Graphics/pappi_3.jpg  used on input line 560.
 (pdftex.def)             Requested size: 318.66946pt x 463.84973pt.
 
-Overfull \hbox (57.90274pt too wide) in paragraph at lines 375--408
+Overfull \hbox (57.90274pt too wide) in paragraph at lines 576--609
  [][] 
  []
 
@@ -1210,24 +1276,24 @@ Overfull \hbox (57.90274pt too wide) in paragraph at lines 375--408
 
 pdfTeX warning: pdflatex.exe (file ./Graphics/frame1.pdf): PDF inclusion: found
  PDF version <1.6>, but at most version <1.5> allowed
-<Graphics/frame1.pdf, id=127, 836.82639pt x 690.38223pt>
+<Graphics/frame1.pdf, id=154, 836.82639pt x 690.38223pt>
 File: Graphics/frame1.pdf Graphic file (type pdf)
 <use Graphics/frame1.pdf>
-Package pdftex.def Info: Graphics/frame1.pdf  used on input line 418.
+Package pdftex.def Info: Graphics/frame1.pdf  used on input line 619.
 (pdftex.def)             Requested size: 455.24408pt x 375.5714pt.
+[11] [12] [13]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 423.
+               Default added (so using `tbp') on input line 624.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 459.
+               Default added (so using `tbp') on input line 660.
 
 
-LaTeX Warning: Reference `tab: cost' on page 7 undefined on input line 491.
+LaTeX Warning: Reference `tab: cost' on page 14 undefined on input line 692.
 
-[7 <./Graphics/skissa_2.jpg>] [8 <./Graphics/frame2.pdf>] [9 <./Graphics/pappi_
-1.jpg>] (icad-template.bbl [10 <./Graphics/pappi_3.jpg>]
+[14] [15] (icad-template.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 22--24
 []\OT1/cmr/m/n/9 Lightboards\TS1/cmr/m/n/9 — \OT1/cmr/m/n/9 R 2020 Height ad-ju
 stable stu-dio pack-age, ex-tra large (95")
@@ -1239,7 +1305,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--24
 ollections / studio-[]packages / products /
  []
 
-[11 <./Graphics/frame1.pdf>])
+[16])
 
 FiXme Summary: Number of notes: 0,
 (FiXme)        Number of warnings: 0,
@@ -1247,7 +1313,13 @@ FiXme Summary: Number of notes: 0,
 (FiXme)        Number of fatal errors: 0,
 (FiXme)        Total: 0.
 
-[12] (icad-template.aux)
+[17]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19 <./Graphics/frame1.pdf>] (icad-template.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.78749pt have occurred.
@@ -1255,11 +1327,14 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
  30696 strings out of 492448
  615362 string characters out of 3119979
- 631428 words of memory out of 3000000
+ 623485 words of memory out of 3000000
  34680 multiletter control sequences out of 15000+200000
  544738 words of font info for 71 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1281,9 +1356,9 @@ al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/berg
 u/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C
 :/Users/bergu/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmtt9.pfb>
-Output written on icad-template.pdf (12 pages, 1465245 bytes).
+Output written on icad-template.pdf (19 pages, 1475350 bytes).
 PDF statistics:
- 224 PDF objects out of 1000 (max. 8388607)
+ 247 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  255 words of extra memory for PDF output out of 10000 (max. 10000000)
 
