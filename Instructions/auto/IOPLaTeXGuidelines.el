@@ -1,0 +1,53 @@
+(TeX-add-style-hook
+ "IOPLaTeXGuidelines"
+ (lambda ()
+   (TeX-add-to-alist 'LaTeX-provided-class-options
+                     '(("iopart" "12pt")))
+   (TeX-run-style-hooks
+    "latex2e"
+    "../usr/home/smith/myfiles/macros"
+    "iopart"
+    "iopart12"
+    "graphicx"
+    "iopams"
+    "CJK")
+   (TeX-add-symbols
+    "gguide")
+   (LaTeX-add-labels
+    "jlab1"
+    "fig1"
+    "bibby"
+    "copyright"
+    "fname"
+    "startsample"
+    "dblcol"
+    "arttype"
+    "math-tab2"
+    "eq1"
+    "eq2"
+    "eq3"
+    "eq4"
+    "eq5"
+    "eq6"
+    "eq7"
+    "eqnum"
+    "second"
+    "cases"
+    "except"
+    "bibtex"
+    "xrefs"
+    "refs"
+    "label"
+    "disc"
+    "abrefs"
+    "tabone"
+    "tabl3"
+    "figinc"
+    "blobs"
+    "jlab2"
+    "jlab2b"
+    "jlab3")
+   (LaTeX-add-bibitems
+    "label"))
+ :latex)
+

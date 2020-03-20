@@ -1,0 +1,42 @@
+\providecommand{\newblock}{}
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+% Bibliography created with iopart-num v2.0
+% /biblio/bibtex/contrib/iopart-num
+
+\bibitem{suh1990principles}
+Suh N~P 1990 {\em {T}he {P}rinciples of {D}esign\/} (Oxford University Press)
+
+\bibitem{gerhard2016suretrack}
+Gerhard K and Foley J~T 2016 in Liu  \cite{icad2016} p~6
+
+\bibitem{carryer2011IntroMechatronics}
+Carryer J~E, Ohline R~M and Kenny T~W 2011 {\em Introduction to Mechatronic
+  Design\/} (Pearson Education)
+
+\bibitem{omarsdottir2016chessmate}
+Ómarsdóttir F~Y, Ólafsson R~B and Foley J~T 2016 in Liu  \cite{icad2016} p~6
+
+\bibitem{cochran2016msdd}
+Cochran D~S, Foley J~T and Bi Z 2016 {\em International Journal of Production
+  Research\/}  24
+
+\bibitem{benevides2012aed}
+Benavides E~M 2012 {\em {A}dvanced engineering design - {A}n integrated
+  approach\/} (Woodhead Publishing)
+
+\bibitem{suh2001axiomatic}
+Suh N~P 2001 {\em {A}xiomatic {D}esign - {A}dvances and {A}pplications\/}
+  (Oxford University Press)
+
+\bibitem{suh2005complexity}
+Suh N~P 2005 {\em {C}omplexity\/} (Oxford University Press)
+
+\bibitem{icad2016}
+Liu A (ed) 2016 {\em 10th {I}nternational {C}onference on {A}xiomatic {D}esign
+  ({ICAD})\/} vol~35 Procedia CIRP (Xi'an, China: Elsevier ScienceDirect)
+
+\end{thebibliography}

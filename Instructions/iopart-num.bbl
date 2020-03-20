@@ -1,0 +1,72 @@
+\providecommand{\newblock}{}
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+% Bibliography created with iopart-num v2.0
+% /biblio/bibtex/contrib/iopart-num
+
+\bibitem{ex1}
+Cisneros A 1971 {\em Astrophys. Space Sci.\/} {\bf 10} 87
+
+\bibitem{ex2}
+Carlip S and Vera R 1998 {\em Phys. Rev.\/} D {\bf 58} 011345
+
+\bibitem{ex3}
+Davies K and Brown G 1997 {\em J. High Energy Phys.\/}  JHEP12(1997)002
+
+\bibitem{ex4}
+Neilson D and Choptuik M 2000 {\em Class. Quantum Grav.\/} {\bf 17} 761
+  (\textit{Preprint} \eprint{gr-qc/9812053})
+
+\bibitem{ex5}
+Harrison M 1999 Dipheomorphism-invariant manifolds (\textit{Preprint}
+  \eprint{hep-th/9909196})
+
+\bibitem{ex6}
+Dorman L~I 1975 {\em Variations of Galactic Cosmic Rays\/} (Moscow: Moscow
+  State University Press) p 103
+
+\bibitem{ex7}
+Caplar R and Kulisic P 1973 {\em Proc. Int. Conf. on Nuclear Physics
+  (Munich)\/} vol~1 (Amsterdam: North-Holland/American Elsevier) p 517
+
+\bibitem{ex8}
+Morse M 1996 {\em Atomic Molecular and Optical Physics\/} ({\em Experimental
+  Methods in the Physical Sciences\/} vol~29) ed Dunning F~B and Hulet R (San
+  Diego: Academic)
+
+\bibitem{bardeen1957:bcs}
+Bardeen J, Cooper L~N and Schrieffer J~R 1957 {\em Phys. Rev.\/} {\bf 108} 1175
+
+\bibitem{caprio2005:coherent}
+Caprio M~A 2005 {\em J. Phys.\/} A {\bf 38} 6385
+
+\bibitem{zamfir2005:132te-beta-enam04}
+Zamfir N~V {\em et~al.\/} 2005 {\em Eur. Phys. J.\/} A {\bf 25}(s01) 389
+
+\bibitem{rose1957:am}
+Rose M~E 1957 {\em Elementary Theory of Angular Momentum\/} (New York: Wiley)
+
+\bibitem{dirac1958:qm}
+Dirac P~A~M 1967 {\em The Principles of Quantum Mechanics\/} 4th ed ({\em The
+  International Series of Monographs on Physics\/} no~27) (Oxford: Clarendon
+  Press)
+
+\bibitem{siegbahn1965:v1}
+Siegbahn K (ed) 1965 {\em Alpha-, Beta-, and Gamma-Ray Spectroscopy\/} vol~1
+  (Amsterdam: North-Holland)
+
+\bibitem{bell1965:coin-lifetime}
+Bell R~E 1965 {\em Alpha-, Beta-, and Gamma-Ray Spectroscopy\/} vol~2 ed
+  Siegbahn K (Amsterdam: North-Holland) p 905
+
+\bibitem{caprio2003:diss}
+Caprio M~A 2003 Ph.D. thesis Yale University (\textit{Preprint}
+  \eprint[arXiv]{nucl-ex/0502004})
+
+\bibitem{doePC}
+Doe J 2006 private communication
+
+\end{thebibliography}
