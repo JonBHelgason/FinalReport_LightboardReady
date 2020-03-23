@@ -8,12 +8,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[a4paper]{jpconf}
 \usepackage{graphicx}
-\graphicspath{{./}{Graphics/}}
+\graphicspath{{./}{graphics/}{graphicsFromGardabae/}}
 
 \bibliographystyle{iopart-num}
 %\usepackage{citesort}
 
 \usepackage{booktabs}
+\usepackage{float}
 \usepackage{array} %% needed for advanced table manipulation
 %% Column types from http://tex.stackexchange.com/questions/54069/table-with-text-wrapping
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
@@ -389,213 +390,163 @@ The importance of industrial design in the development of the Lightboard Ready a
 	
 	
 	
+\section{Design}
+%What was the process used to develop the chosen design and implement it? Remember to cite if using existing methodology!
+Axiomatic design is implemented in our design, they are only rules (axiom) that needs to follow\cite{suh2001axiomatic}.  
+\begin{quote}
+	Axiom 1, the independence axiom:
+	Maintain the independence of the functional requirements
 	
-	\section{Design}
-	%What was the process used to develop the chosen design and implement it? Remember to cite if using existing methodology!
-	Axiomatic design is implemented in our design, they are only rules (axiom) that needs to follow\cite{suh2001axiomatic}.  
-	\begin{quote}
-		Axiom 1, the independence axiom:
-		Maintain the independence of the functional requirements
-		
-		Axiom 2, the information axiom:
-		Minimize the information content of the design
-	\end{quote}
-	
-	%Assumptions stated (there are always some)
-	We assume that there will be 230V mains where electric power is needed and users have a room where no sunlight is and the walls are dark (darkroom).     % ??????fleira SENTI JOE EMAIL???????
-	
-	%Design DP0, DP1-7.  First a Noun; can be quantified or compared.
-	\subsection{Physical Solution}\label{PS}
-	The Physical solution for the Functional requirement in chapter \ref{FR} are;
-	\begin{quote} 
-		\textbf{\PS0} : Lightboard with mechanical linkage system.
-	\end{quote}
-	
-	\begin{quote} 
-		\textbf{\PS1} : Linkage bar system for camera. \\ 
-		\textbf{Metric :} Length between camera and lightboard is $2 m \pm 0.05 m$ and height is $1.5 m$.
-	\end{quote}
-	
-	\begin{quote} 
-		\textbf{\PS2} : Linkage bar system for lights.
-		\\ \textbf{Metric :} Bar is 45° out from the lightboard.
-	\end{quote}
-	
-	\begin{quote} 
-		\textbf{\PS3} : Linkage bar system for mic.
-		\\ \textbf{Metric :} Mic is pointing to the mouth of the teacher when he stands in the middle of the light board.
-	\end{quote}
-	
-	\begin{quote} 
-		\textbf{\PS4} : Hinges on linkage system.
-		\\ \textbf{Metric :} Hinges rotate min 135°.
-	\end{quote}
-	
-	\begin{quote} 
-		\textbf{\PS5} : Wheel under the frame.
-		\\ \textbf{Metric :} Loading min 500 N per wheel and castor wheels.
-	\end{quote}
-	
-	%Design matrix and discussion of coupling: uncoupled, decoupled, coupled
-	The Design Decomposition flowchart is shown in figure \ref{fig:matrix}.
-	This system is decoupled (path-dependent) because $FR_1$, $FR_2$ and $FR_3$ need to have two physical solutions to fulfill the functional requirement.
-	In other words, how camera, light, and mic are guided to its place depends on the hinges.
-	A decoupled design is worse than an uncoupled but still allows the exact adjustment of the functional requirements.\cite{system_design}.
-	
-	
-	%Detailed explanation of how each DP was implemented
-	\textbf{\PS1} Is implemented with a linkage system from the lightboard.
-	Two hinges make it foldable.
-	When folded it is in the correct height and length from the lightboard.
-	The length was estimated after a trip to a lightboard studio setup with StudyHax.
-	
-	\textbf{\PS2} The same linkage system design is used for the three lights.
-	Hinges are used for the foldability of the arms and give the desired angle of the lights.
-	The length is 700 mm that gives the lights the proper distance from the lightboard after measuring the distance in StudyHax studio.
-	
-	\textbf{\PS3} The linkage system that is used for the light above the teacher is used here.
-	Because of the x-profile, it is possible to put a holder on the side of the linkage system that holds the mic in place.
-	The holder can be placed in different angles in the right direction.
-	
-	\textbf{\PS4} Next to the lightboard for the lights will be a hinge (see B in figure \ref{fig:Finalprodotype2} ) that can move the linkage system in the desired angle.
-	The camera will be two hinges to fold the camera stand.
-	
-	\textbf{\PS5} Under the frame is 4 castor wheels with the brake as is shown in C in figure \ref{fig:Finalprodotype2}.
-	They will be fixed with bolts and nuts to the frame.
-	
-	%Modular Dependency Diagram or System Diagram
-	Modular Dependency Diagram or System Diagram can be seen in figure \ref{fig:scematic}
-	\begin{figure}
-		\centering
-		\includegraphics[width=0.7\linewidth]{scematic.pdf}
-		\caption{The schematic of Lightboard Ready}
-		\label{fig:scematic}
-	\end{figure}
-	
-	
-	%CAD Drawing (circuit schematic or other)
-	\begin{figure}
-		\centering
-		\includegraphics[width=0.7\linewidth]{skissa_1.jpg}
-		\caption{Sketches of different concepts}\label{fig:Sketchesofdifferentconcepts}
-	\end{figure}
-	\begin{figure}
-		\centering
-		\includegraphics[width=0.7\linewidth]{skissa_2.jpg}
-		\caption{Sketches of different concepts}\label{fig:Sketchesofdifferentconcepts2}
-	\end{figure}
-	
-	\begin{figure}
-		\centering
-		\includegraphics[width=1\linewidth]{frame2.pdf}
-		\caption{Lightboard ready folded with detail view of the hinge and caster that is used}
-		\label{fig:Finalprodotype2}
-	\end{figure}
-	
-	
-	
-	
-	
-	
-	%Stages of design and refinement to show the progression from idea to finished system
-	Figure \ref{fig:Sketchesofdifferentconcepts} shows our first idea of the concept.  It shows a sketch of a linkage system connected to a lightboard.
-	There are lights on the sides and lights above the teacher.
-	It also is a v-shaped linkage system for the camera.
-	Figure \ref{fig:pappi_1} and \ref{fig:pappi_3} shows a physical model of the idea but there we have added hinges on the linkage system for the light so the system would take less space in storage.
-	The beta prototype is shown in figure \ref{fig:Finalprodotype} and shows the lightboard built with x-profiles and the linkage system for the lights and mic has hinges for foldability.
-	The linkage system for the camera has been simplified and this structure makes the feet on the lightboard more robust. There is a latent need with this design, that is it's possible to move the camera stand closer to the writing surface if needed.
-	There are hinges on the camera linkage that goes away from the lightboard so it has foldability, and also a beam with rubber dampers on the camera stand that makes the camera stand stable.
-	Under the frame are castor wheels with brakes for mobility.
-	
-	%Pictures of the final prototype
-	The final prototype can be seen in figure \ref{fig:Finalprodotype}.
-	
-	\section{Results and Discussion}
-	%This is a subjective section. Is there data and discussion here? Explain challenges that would be of interest to a reader and how you solved them. Remember that the reader does not care if you found the exercise “interesting” or “learned a lot”. Instead, they would like to know what things are of interest to someone in this field of research. What things should they learn? What problems arose and how did you solve them? Be specific and detailed. You should also justify your statements with data. This is a good place to put analysis (including equations) and simulation.
-	
-	
-	%What needed to be tested and why?
-	The arm nr. 1, 3, and 4  shown in figure \ref{fig:Finalprodotype} need to be tested according to physical solutions, in chapter \ref{PS} is stated that the arm nr 3 need too let the camera be 2 meters away from writing surface and arm 4 makes the camera be 1.5 m from the ground, this need to be tested to see if the position of the camera is correct. Arm nr. 1  in figure \ref{fig:Finalprodotype} needs to be tested according to PS 2 to see if the lights are in the correct place and fulfill its functional requirement. 
-	%How did you set up your tests?  (details on setup and execution)
-	The arms are made in ... by Hannes and are attached to the lightboard frame that we have access to from StudyHax.  Test video will be made with a smartphone to see if the position is correct and meanwhile the light is tested with one of us to see if the lights are in the correct place.
-	%For the lights, we will make an adjustable arm to hold them in the correct position and also mount them on the lightboard.
-	%In figure \ref{fig:pappi_1} is a physical model that shows the layout of the lightboard with lights and camera stand ready for use.
-	%In figure \ref{fig:pappi_3} is it folded together for transport or storage.\\
-	%The plan for the test is to have a dark room that we can put up our equipment for recording a short video that shows how this idea works.
-	%The video is going to show both what is seen in videos made with this and also the layout of our equipment.
-	
-	%Quantitative data from tests?
-	
-	
-	
-	%Power consumption (Watts)
-	
-	
-	%Mass of system
-	
-	
-	%What does the data mean?
-	
-	
-	%Discussion of the system's performance
-	
-	
-	
-	%How are you going to test it?  Make a plan.
-	This idea is going to be tested with building the frame for the camera stand and mount it to a lightboard that we have access to.
-	For the lights, we will make an adjustable arm to hold them in the correct position and also mount them on the lightboard.
-	In figure \ref{fig:pappi_1} is a physical model that shows the layout of the lightboard with lights and camera stand ready for use.
-	In figure \ref{fig:pappi_3} is it folded together for transport or storage.\\
-	The plan for the test is to have a dark room that we can put up our equipment for recording a short video that shows how this idea works.
-	The video is going to show both what is seen in videos made with this and also the layout of our equipment.
-	
-	\begin{figure}
-		\centering 
-		\includegraphics[width=0.7\linewidth]{pappi_1.jpg}
-		\caption{Physical model}
-		\label{fig:pappi_1}
-	\end{figure}
-	\begin{figure}
-		\centering
-		\includegraphics[width=0.7\linewidth]{pappi_3.jpg}
-		\caption{Physical model, folded together}
-		\label{fig:pappi_3}
-	\end{figure}
-	\section{Product Architecture}
-	The product line is two, Medium (2m width ) and Large (3m width ). Both of them have a 16:9 ratio so the camera and video will cover the whole glass without it need to stretch or crop the recordings.
-	One possible assignment of elements to chunks is shown in figure \ref{fig:scematic}.
-	The importance of industrial design in the development of the Lightboard Ready are shown in table \ref{tab:importnace}
-	
-	
-	
-	
-	
-	%\section{ Importance of industrial design}
-	\begin{table}
-		\centering
+	Axiom 2, the information axiom:
+	Minimize the information content of the design
+\end{quote}
+
+%Assumptions stated (there are always some)
+We assume that there will be 230V mains where electric power is needed and users have a room where no sunlight is and the walls are dark (darkroom).     % ??????fleira SENTI JOE EMAIL???????
+
+%Design DP0, DP1-7.  First a Noun; can be quanitified or compared.
+\subsection{Physical Solution}\label{PS}
+The Physical solution for the Functional requirement in chapter \ref{FR} are;
+\begin{quote} 
+	\textbf{\PS0} : Lightboard with mechanical linkage system.
+\end{quote}
+
+\begin{quote} 
+	\textbf{\PS1} : Linkage bar system for camera. \\ 
+	\textbf{Metric :} Length between camera and lightboard is $2 m \pm 0.05 m$ and height is $1.5 m$.
+\end{quote}
+
+\begin{quote} 
+	\textbf{\PS2} : Linkage bar system for lights.
+	\\ \textbf{Metric :} Bar is 45° out from the lightboard.
+\end{quote}
+
+\begin{quote} 
+	\textbf{\PS3} : Linkage bar system for mic.
+	\\ \textbf{Metric :} Mic is pointing to the mouth of the teacher when he stands in the middle of lightboard.
+\end{quote}
+
+\begin{quote} 
+	\textbf{\PS4} : Hinges on linkage system.
+	\\ \textbf{Metric :} Hinges rotate min 135°.
+\end{quote}
+
+\begin{quote} 
+	\textbf{\PS5} : Wheel under the frame.
+	\\ \textbf{Metric :} Loading min 500 N per wheel and castor wheels.
+\end{quote}
+
+%Design matrix and discussion of coupling: uncoupled, decoupled, coupled
+The Design Decomposition flowchart is shown in figure \ref{fig:matrix}.
+This system is decoupled (path-dependent) because $FR_1$, $FR_2$ and $FR_3$ need to have two physical solutions to fulfill the functional requirement.
+In other words, how camera, light, and mic are guided to its place depends on the hinges.
+A decoupled design is worse than an uncoupled but still allows the exact adjustment of the functional requirements.\cite{system_design}.
+
+
+%Detailed explanation of how each DP was implemented
+\textbf{\PS1} Is implemented with a linkage system from the lightboard.
+Two hinges make it foldable.
+When folded it is in the correct height and length from the lightboard.
+The length was estimated after a trip to a lightboard studio setup with StudyHax.
+
+\textbf{\PS2} The same linkage system design is used for the three lights.
+Hinges are used for the foldability of the arms and give the desired angle of the lights.
+The length is 700 mm that gives the lights the proper distance from the lightboard after measuring the distance in StudyHax studio.
+
+\textbf{\PS3} The linkage system that is used for the light above the teacher is used here.
+Because of the x-profile, it is possible to put a holder on the side of the linkage system that holds the mic in place.
+The holder can be placed in different angles in the right direction.
+
+\textbf{\PS4} Next to the lightboard for the lights will be a hinge (see B in figure \ref{fig:Finalprodotype2} ) that can move the linkage system in the desired angle.
+The camera will be two hinges to fold the camera stand.
+
+\textbf{\PS5} Under the frame is 4 castor wheels with the brake as is shown in C in figure \ref{fig:Finalprodotype2}.
+They will be fixed with bolts and nuts to the frame.
+
+%Modular Dependency Diagram or System Diagram
+Modular Dependency Diagram or System Diagram can be seen in figure \ref{fig:scematic}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{scematic.pdf}
+	\caption{The schematic of Lightboard Ready}
+	\label{fig:scematic}
+\end{figure}
+
+
+%CAD Drawing (circuit schematic or other)
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{skissa_1.jpg}
+	\includegraphics[width=1\linewidth]{skissa_2.jpg}
+	\caption{Sketches of different concepts}\label{fig:Sketchesofdifferentconcepts}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{frame2.pdf}
+	\caption{Lightboard ready folded with detail view of the hinge and caster that is used}
+	\label{fig:Finalprodotype2}
+\end{figure}
+
+
+
+
+
+
+%Stages of design and refinement to show the progression from idea to finished system
+Figure \ref{fig:Sketchesofdifferentconcepts} shows our first idea of the concept.  It shows a sketch of a linkage system connected to a lightboard.
+There are lights on the sides and lights above the teacher.
+It also is a v-shaped linkage system for the camera.
+Figure \ref{fig:pappi_1} and \ref{fig:pappi_3} shows a physical model of the idea but there we have added hinges on the linkage system for the light so the system would take less space in storage.
+The beta prototype is shown in figure \ref{fig:Finalprodotype} and shows the lightboard built with x-profiles and the linkage system for the lights and mic has hinges for foldability.
+The linkage system for the camera has been simplified and this structure makes the feet on the lightboard more robust. There is a latent need with this design, that is it's possible to move the camera stand closer to the writing surface if needed.
+There are hinges on the camera linkage that goes away from the lightboard so it has foldability, and also a beam with rubber dampers on the camera stand that makes the camera stand stable.
+Under the frame are castor wheels with brakes for mobility.
+
+%Pictures of the final prototype
+The final prototype can be seen in figure \ref{fig:Finalprodotype}.
+
+
+
+
+
+
+
+\subsection{Product Architecture}
+The product line is two, Medium (2m width ) and Large (3m width ). Both of them have a 16:9 ratio so the camera and video will cover the whole glass without it need to stretch or crop the recordings.
+One possible assignment of elements to chunks is shown in figure \ref{fig:scematic}.
+The importance of industrial design in the development of the Lightboard Ready are shown in table \ref{tab:importnace}
+
+
+
+
+
+%\section{ Importance of industrial design}
+\begin{table}
+	\centering
+	\resizebox{\columnwidth}{!}{%
 		\begin{tabular}{lll}
 			\textbf{Ergonomics}& Level of importance & Explanation\\
 			\hline
 			Ease of use  & 
 			\setlength{\fboxsep}{0pt}\fbox{\IosSevenSlider{2.5cm}{1}} & 
-			So people with  little light and camera settings  \\ &&  experience canuse lightbord. \\
+			So people with  \\ && little light and \\ && camera settings \\ &&  experience can \\ && use lightbord. \\
 			Ease of maintenance  &
 			\setlength{\fboxsep}{0pt} \fbox{\IosSevenSlider{2.5cm}{0.1}} & 
-			The system is robust with little mobility\\
+			The system is \\ && robust with little \\ && mobility\\
 			Quantity of interaction &\setlength{\fboxsep}{0pt}\fbox{\IosSevenSlider{2.5cm}{0.3}}  & 
-			There are only two function onthe product, assemble  \\ &&  and disassemble .\\
+			There are only \\ && two function on \\ && the product, \\ && assemble  and \\ && disassemble .\\
 			Novelty of user interaction &
 			\setlength{\fboxsep}{0pt}\fbox{\IosSevenSlider{2.5cm}{0.8}}  &
-			The product is  known, but not  with this installation. \\
+			The product is  \\ && known, but not \\ &&  with this \\ && installation. \\
 			Safety & \setlength{\fboxsep}{0pt}\fbox{\IosSevenSlider{2.5cm}{0.9}}  & 
-			There are  safety  issues because  it is possible to get\\ && stuck between two rods. \\
+			There are  safety  \\ && issues because  \\ && it is possible to \\ && get stuck\\ && between two \\ && rods. \\
 			\hline
 			\textbf{Aesthetics} & 
 			&\\
 			Product differential & 
 			\setlength{\fboxsep}{0pt}
 			\fbox{\IosSevenSlider{2.5cm}{0.1}} & 
-			This is a new method\\
+			This is a new \\ && method\\
 			Pride of ownership &
 			\setlength{\fboxsep}{0pt}
 			\fbox{\IosSevenSlider{2.5cm}{0.1}} &
@@ -603,135 +554,328 @@ The importance of industrial design in the development of the Lightboard Ready a
 			Team motivation & 
 			\setlength{\fboxsep}{0pt}
 			\fbox{\IosSevenSlider{2.5cm}{0.5}} &
-			It is a new concept
+			It is a new \\ && concept
 			
 		\end{tabular}
-		\caption{Assessing the importance of industrial design for  Lightboard Ready}
-		\label{tab:importnace}
-	\end{table}
-	\section{Design for Manufacturing}
-	
-	
-	% 1. Detailed Bill of Materials
-	
-	\begin{figure*}
-		\centering
-		\includegraphics[width=1\linewidth]{frame1.pdf}
-		\caption{Lightboard ready}
-		\label{fig:Finalprodotype}
-	\end{figure*}
-	
-	\begin{table*}[]
-		\centering
-		\begin{tabular}{llrrr}
-			
-			Part nr. & Component & Material & Number of parts  \\
-			\hline
-			1&4040-Lite-Black 700mm  & Aluminium  & 4  \\
-			2&4040-Lite-Black 1000mm & Aluminium &  2\\
-			3&4040-Lite-Black 1400mm & Aluminium & 1  \\
-			4&4040-Lite-Black 1900mm & Aluminium & 3  \\
-			5&4040-Lite-Black 2000mm  & Aluminium &3  \\
-			6&Standard Anchor Fastener  & Galvanic steel&4  \\
-			7&Double Anchor Fastener  &Galvanic steel & 4  \\
-			8&Caster with brake  & Galvanic steel and rubber & 4  \\
-			9&Floor Nylon-Glide  & Nylon& 2 \\
-			10&2 Hole-Pivot Joint  & Galvanic steel & 5  \\
-			11&Self-Aligning T-Nut  & Galvanic steel &4   \\
-			12&45 Degree Support 640mm  & Aluminium &  6 \\
-			13&45 Degree Support 160mm  & Aluminium & 2  \\
-			14&Starphire Glass& Glass &1\\
-			15&LED Strip& & 1\\
-			16&Power Supply & & 1 \\
-			17&Black Glass Gasket & Thermoplastic Elastomer & 1\\
-			18&Packaging & Cardboard & 1  \\ %\hline
-		\end{tabular}
-		\caption{Bill of material }
-		\label{tab:BOM}
-	\end{table*}
-	
-	
-	% 2. The estimated cost of manufacturing your product for the quantities you expect to sell
-	The market in Iceland is schools at all levels.% and companies that could see this as a way to teach new employees the basics in videos.
-	There are 237 schools in Iceland\cite{skolar}.
-	So we estimate that every third school will buy and then the market for Lightboard Ready is 80 units.
-	%The market is also the whole world but then it would be done with partners to save transport.
-	%The market is also the whole world with internet sales.
-	\begin{table*}[]
-		\centering
-		\begin{tabular}{lrr|r}
-			\hline
-			Component & \multicolumn{1}{l}{\begin{tabular}[c]{@{}l@{}}Purchased \\ Materials\end{tabular}} &  \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Assembly \\ (Labor)\end{tabular}} & \multicolumn{1}{l}{\begin{tabular}[c]{@{}l@{}}Total Unit\\ Variable\\ Cost\end{tabular}} \\ \hline
-			4040-Lite-Black 700mm  & 53.79 &  & 53.79 \\
-			4040-Lite-Black 1000mm  & 49.56 &  & 49.56 \\
-			4040-Lite-Black 1400mm & 33.92 & \textbf{} & 33.92 \\
-			4040-Lite-Black 1900mm  & 143.82 &  & 143.82 \\
-			4040-Lite-Black 2000mm  & 158.46 &  & 158.46 \\
-			Standard Anchor Fastener  & 14.80  &  & 14.80 \\
-			Double Anchor Fastener  & 23.20  &  & 23.20 \\
-			Caster with brake  & 41.20 &   & 41.20 \\
-			Floor Nylon-Glide  & 4.80  &  & 4.80 \\
-			2 Hole-Pivot Joint  & 94.50  &  & 94.50 \\
-			Self-Aligning T-Nut  & 7.20  &  & 7.20 \\
-			45 Degree Support 640mm  & 198.90  &  & 198.90 \\
-			45 Degree Support 160mm  & 35.80  &  & 35.80 \\
-			Black Glass Gasket & 12.25 & & 12.25\\
-			Starphire Glass & 264.00 & & 264.00 \\
-			LED Strip & 29.99 & & 29.99 \\
-			Power Supply & 26.50 & & 26.50\\
-			Packaging & 5.00 & 20.00 & 25.00 \\ \hline
-			Total Direct Costs & 1197.69.89 & 20.00 & 1217.69 \\
-			Overhead Charges & 119.8  & 5 & 125.58 \\
-			Transport from Supplier & & & 97.66 \\
-			\textbf{Total Cost} &   &  & \textbf{1440.93} \\ \hline
-		\end{tabular}
-		\caption{Cost estimate in USD \cite{8020} \cite{ispan}}
-		\label{tab:cost}
-	\end{table*}
-	
-	We are buying everything in correct lengths and drilled so there is no labor cost in table \ref{tab: cost} except for the packaging.
-	These prices are found on 80/20.net and then the transport cost is estimated from that all 80 units are imported in one container.
-	The reason that USD is used is that the ISK is always changing and on the BOM list is everything imported except for the glass. 
-	
-	% 3. Answer:  How are you reducing the cost of components, assembly, and supporting production?
-	Lightboard Ready is going to be sold dissembled  %like IKEA does it, 
-	in flat boxes and the buyer %puts itself together.
-	assemble it themself and 
-	this will % save assembly cost but it also makes the size of the packaging lot smaller, transportation easier and %the transport cost is less.
-	thereby making it cheaper.
-	This design uses only two angles in cutting, 90 and 45 degrees.
-	All combinations on the x-profile fit together so it is possible to use standard connections that are cheaper.
-	It also makes this design for the frame more robust.
-	\section{Design for Environment}
-	% Answer how you are doing these things in your product or why you cannot
-	
-	
-	%1.Design products and processes with industrial materials that can be recycled continually with no loss in performance, thereby creating new industrial materials.
-	Lightboard Ready is made mostly out of Aluminium, galvanic steel and glass wish can be recycled constantly without loss of performance and thereby create new industrial material.
-	%2.Design products and processes with natural materials that can be fully returned to the earth’s natural cycles, thereby creating new natural materials.
-	The only natural material in Lightboard ready is the packaging, wish is a cardboard that fully recycles or can fully return to earth natural cycles, and thereby create new natural material.
-	
-	%3.Design products and processes that do not produce unnatural, toxic materials that cannot be safely processed by either natural or industrial cycles.
-	No toxin material cannot be safely processed by either natural or industrial cycles.
-	
-	%4.Design products and processes with clean, renewable sources of energy, rather than fossil fuels.
-	The product is assembled in Iceland that has renewable and clean energy.
-	The glass is made in Iceland with renewable energy.
-	The x-profiles are coming from a supplier that uses aluminum produced in Iceland in their product. 
-	
-	
-	\section{Experiments}
-	
-	\section{Results and Discussion}
-	
-	\section{Conclusion}
-	
-	\subsection{Future work}
-	
-	\subsection{Summary}
-	
-	\section*{References}
+	}
+	\caption{Assessing the importance of industrial design for  Lightboard Ready}
+	\label{tab:importnace}
+\end{table}
+
+
+\subsection{Design for Manufacturing}
+
+
+% 1. Detailed Bill of Materials
+
+\begin{figure*}
+	\centering
+	\includegraphics[width=1\linewidth]{frame1.pdf}
+	\caption{Lightboard ready}
+	\label{fig:Finalprodotype}
+\end{figure*}
+
+\begin{table*}[]
+	\centering
+	\begin{tabular}{llrrr}
+		
+		Part nr. & Component & Material & Number of parts  \\
+		\hline
+		1&4040-Lite-Black 700mm  & Aluminium  & 4  \\
+		2&4040-Lite-Black 1000mm & Aluminium &  2\\
+		3&4040-Lite-Black 1400mm & Aluminium & 1  \\
+		4&4040-Lite-Black 1900mm & Aluminium & 3  \\
+		5&4040-Lite-Black 2000mm  & Aluminium &3  \\
+		6&Standard Anchor Fastener  & Galvanic steel&4  \\
+		7&Double Anchor Fastener  &Galvanic steel & 4  \\
+		8&Caster with brake  & Galvanic steel and rubber & 4  \\
+		9&Floor Nylon-Glide  & Nylon& 2 \\
+		10&2 Hole-Pivot Joint  & Galvanic steel & 5  \\
+		11&Self-Aligning T-Nut  & Galvanic steel &4   \\
+		12&45 Degree Support 640mm  & Aluminium &  6 \\
+		13&45 Degree Support 160mm  & Aluminium & 2  \\
+		14&Starphire Glass& Glass &1\\
+		15&LED Strip& & 1\\
+		16&Power Supply & & 1 \\
+		17&Black Glass Gasket & Thermoplastic Elastomer & 1\\
+		18&Packaging & Cardboard & 1  \\ %\hline
+	\end{tabular}
+	\caption{Bill of material }
+	\label{tab:BOM}
+\end{table*}
+
+
+% 2. The estimated cost of manufacturing your product for the quantities you expect to sell
+The market in Iceland is schools at all levels.% and companies that could see this as a way to teach new employees the basics in videos.
+There are 237 schools in Iceland\cite{skolar}.
+So we estimate that every third school will buy and then the market for Lightboard Ready is 80 units.
+%The market is also the whole world but then it would be done with partners to safe transport.
+%The market is also the whole world with internet sale.
+\begin{table*}[]
+	\centering
+	\begin{tabular}{lrr|r}
+		\hline
+		Component & \multicolumn{1}{l}{\begin{tabular}[c]{@{}l@{}}Purchased \\ Materials\end{tabular}} &  \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Assembly \\ (Labor)\end{tabular}} & \multicolumn{1}{l}{\begin{tabular}[c]{@{}l@{}}Total Unit\\ Variable\\ Cost\end{tabular}} \\ \hline
+		4040-Lite-Black 700mm  & 53.79 &  & 53.79 \\
+		4040-Lite-Black 1000mm  & 49.56 &  & 49.56 \\
+		4040-Lite-Black 1400mm & 33.92 & \textbf{} & 33.92 \\
+		4040-Lite-Black 1900mm  & 143.82 &  & 143.82 \\
+		4040-Lite-Black 2000mm  & 158.46 &  & 158.46 \\
+		Standard Anchor Fastener  & 14.80  &  & 14.80 \\
+		Double Anchor Fastener  & 23.20  &  & 23.20 \\
+		Caster with brake  & 41.20 &   & 41.20 \\
+		Floor Nylon-Glide  & 4.80  &  & 4.80 \\
+		2 Hole-Pivot Joint  & 94.50  &  & 94.50 \\
+		Self-Aligning T-Nut  & 7.20  &  & 7.20 \\
+		45 Degree Support 640mm  & 198.90  &  & 198.90 \\
+		45 Degree Support 160mm  & 35.80  &  & 35.80 \\
+		Black Glass Gasket & 12.25 & & 12.25\\
+		Starphire Glass & 264.00 & & 264.00 \\
+		LED Strip & 29.99 & & 29.99 \\
+		Power Supply & 26.50 & & 26.50\\
+		Packaging & 5.00 & 20.00 & 25.00 \\ \hline
+		Total Direct Costs & 1197.69.89 & 20.00 & 1217.69 \\
+		Overhead Charges & 119.8  & 5 & 125.58 \\
+		Transport from Supplier & & & 97.66 \\
+		\textbf{Total Cost} &   &  & \textbf{1440.93} \\ \hline
+	\end{tabular}
+	\caption{Cost estimate in USD \cite{8020} \cite{ispan}}
+	\label{tab:cost}
+\end{table*}
+
+We are buying everything in correct lengths and drilled so there is no labor cost in table \ref{tab:cost} except for the packaging.
+These prices are found on 80/20.net and then the transport cost is estimated from that all 80 units are imported in one container.
+The reason that USD is used is that the ISK is always changing and on the BOM list is everything imported except for the glass. 
+
+% 3. Answer:  How are you reducing the cost of components, assembly, and supporting production?
+Lightboard Ready is going to be sold dissembled  %like IKEA does it, 
+in flat boxes and the buyer %puts itself together.
+assemble it themself and 
+this will % save assembly cost but it also makes the size of the packaging lot smaller, transportation easier and %the transport cost is less.
+thereby making it cheaper.
+This design uses only two angles in cutting, 90 and 45 degrees.
+All combinations on the x-profile fit together so it is possible to use standard connections that are cheaper.
+It also makes this design for the frame more robust.
+\subsection{Design for Environment}
+% Answer how you are doing these things in your product or why you cannot
+
+
+%1.Design products and processes with industrial materials that can be recycled continually with no loss in performance, thereby creating new industrial materials.
+Lightboard Ready is made mostly out of Aluminium, galvanic steel and glass wish can be recycled constantly without loss of performance and thereby create new industrial material.
+%2.Design products and processes with natural materials that can be fully returned to the earth’s natural cycles, thereby creating new natural materials.
+The only natural material in Lightboard ready is the packaging, wish is a cardboard that fully recycles or can fully return to earth natural cycles, and thereby create new natural material.
+
+%3.Design products and processes that do not produce unnatural, toxic materials that cannot be safely processed by either natural or industrial cycles.
+No toxin material cannot be safely processed by either natural or industrial cycles.
+
+%4.Design products and processes with clean, renewable sources of energy, rather than fossil fuels.
+The product is assembled in Iceland that has renewable and clean energy.
+The glass is made in Iceland with renewable energy.
+The x-profiles are coming from a supplier that uses aluminum produced in Iceland in their product. 
+%\clearpage
+
+
+\section{Results and Discussion}
+%This is a subjective section. Is there data and discussion here? Explain challenges that would be of interest to a reader and how you solved them. Remember that the reader does not care if you found the exercise “interesting” or “learned a lot”. Instead, they would like to know what things are of interest to someone in this field of research. What things should they learn? What problems arose and how did you solve them? Be specific and detailed. You should also justify your statements with data. This is a good place to put analysis (including equations) and simulation.
+%What needed to be tested and why?
+\subsection{Physical Test}
+The arm nr. 1, 3, and 4  shown in figure \ref{fig:Finalprodotype} need to be tested according to physical solutions. In the chapter, \ref{PS} is stated that the arm nr 3 need too let the camera be 2 meters away from writing surface and arm 4 makes the camera be 1.5 m from the ground, this need to be tested to see if the position of the camera is correct according to \FR1 in chapter \ref{FR}.
+
+Arm nr. 1  in figure \ref{fig:Finalprodotype} needs to be tested according to \PS2 to see if the lights are in the correct place and fulfill its functional requirement. 
+
+The folding mechanism  with \PS4 are tested to see if it will full fill \FR4
+
+
+The Caster nr. 8  in figure \ref{fig:Finalprodotype} is added to the lightboard and it is moved around by one person if so the design will full fill \FR5 in chapter \ref{FR}
+%How did you set up your tests?  (details on setup and execution)
+
+The arms and hinges are made by Hannes (see figure \ref{fig:hinge}) at his workshop and are attached to the lightboard frame that we have access to from StudyHax\footnote{There website is \url{https://www.studyhax.is}}, figure \ref{fig:lightfold}.  Test video will be made with a smartphone to see if the position is correct and meanwhile the light is tested with one of us to see if the lights are in the correct place, see figure \ref{fig:LightonHannes}.
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{graphicsFromGardabae/LightOnHannes.jpg}
+	\caption{Lightboard and light in illuminated room}
+	\label{fig:LightonHannes}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{graphicsFromGardabae/Lom.jpg}
+	\caption{Hinges made by Hannes at his workshop for alpha prototype}
+	\label{fig:hinge}
+\end{figure}
+
+
+%Power consumption (Watts)
+\subsection{Power consumption and mass of system }
+The LED lights that lights up the glass use 24 Volt and 1.8 ampler, with the Power law (equation \ref{power})
+\begin{equation}\label{power}
+P = V \times I
+\end{equation}
+It is determent the LED consume 43 Watts.
+This is measured with the DC power supply from UNIROI shown in figure \ref{fig:powercons}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{graphicsFromGardabae/Powerconsum.jpg}
+	\caption{Power consumption for LED strip}
+	\label{fig:powercons}
+\end{figure}
+
+%Mass of system
+The mass of the system is 79 kg as is shown in table \ref{weight}, note this is the beta prototype shown in figure \ref{fig:Finalprodotype}.
+\begin{table}[]
+	\begin{tabular}{lr}
+		X-profile \cite{8020}& 39 kg \\
+		Glass \cite{ispan} & 37 kg \\
+		LED and transformer & 1 kg \\
+		Fasteners, hinges and wheels & 2 kg \\ \hline
+		\textbf{Total}& 79 kg
+	\end{tabular}
+	\caption{Weight of Lightboard Ready}
+	\label{weight}
+\end{table}
+
+\subsection{Result from physical test}
+%Quantitative data from tests?
+With our alpha prototype, we measured the metrics that were set in chapter \ref{PS}.
+The camera is 1,5 m high and 2 m away from the glass.
+The linkage system for the lights can be 45° from the lightboard and the hinges can rotate 180° where the metric says that it should rotate min 135°, see figure \ref{fig:sidebar1} and \ref{fig:sidebar2}.
+Also, it is possible to change the height of the light.
+%The castor wheels can handle load up to 500 N.
+
+%For the FR one person can move the Lightboard Ready.
+%The width is less than 0.8 m folded together, both linkage systems for lights and camera fold inside of the frame for the castor wheels and that is 0.8 m, see figure \ref{fig:fold} and \ref{fig:lightfold}
+%What does the data mean?
+%Discussion of the system's performance
+%The camera is in the correct position from our calculation, both for height and distance, but in the test, the correct camera was missing and therefore it needs to be tested again.
+
+In the garage, the light was tested but it was too bright inside and therefore we could not determent for sure if the position of the light was correct. see figure  \ref{fig:LightonHannes}, 
+The folding mechanism was successful, the width of the lightboard was within 0.8 meters, see the test in chapter \ref{PhysicalTestPic}.
+
+After we added caster wheels under the lightboard the frame is easily moved by a single person.
+
+See table \ref{Tab:ResultFromPhysicalTest} for the summary of the physical test.
+
+\begin{table*}
+	\resizebox{\linewidth}{!}{%
+		\begin{tabular}{l|lll}
+			& Functional Requirements                & Metric                        & Result  \\ \hline
+			FR1 & Guide the camera to its correct place. & Image fills the frame 80-99\% & Unknown \\
+			FR2 & Guide the lights to its correct place. & Can see face expression       & Unknown \\
+			FR4 & Fold together                          & The width is less than 0.8 m  & Success \\
+			FR5 & Move studio in one unit                & Can one person move it        & Success
+		\end{tabular}%
+	}
+	\caption{Result from Physical test}
+	\label{Tab:ResultFromPhysicalTest}
+\end{table*}
+
+\subsection{Survey}
+A survey was done remotely in Google Forms to see the reaction from people what they think about the product, the following question was asked after we showed them a couple of pictures of us folding the lightboard. The survey was sent to 30 people.
+\begin{enumerate}
+	\item Do you think it would be easy to fold the lightboard like in figure 3 and 4?
+	\item Notice in figure 4 there is a wheel under the lightboard, do you think it would be easy to move it around?
+	\item Do you think the Lightboard is pretty?
+\end{enumerate}
+The survey can be viewed in the following link :
+
+\url{https://forms.gle/c1GtxNujG47PhEmR7}
+
+%\subsection{Result from physical test}
+%What does the data mean?
+
+\subsection{Result from survey}
+On Sunday 2020-03-22, 17 people have responded to the survey, and the result is 75\% do think it would be easy to fold the lightboard.
+94.1 \% think it would be easy to move the lightboard around and 47.1 \% think it looks very pretty. The result is shown in figure \ref{fig:SurResult}.
+\begin{figure*}
+	\centering
+	\includegraphics[width=1\linewidth]{surveyres2.pdf}
+	\caption{Result from survey on google forms}
+	\label{fig:SurResult}
+\end{figure*}
+
+\subsection{Discussion}
+%Discussion of the system's performance
+The system performance meets expectations in many ways.
+The folding mechanism was successful, the width of the lightboard was within 0.8 meters, see the test in chapter \ref{PhysicalTestPic}.
+After we added a caster wheel under the lightboard the frame was easily moved by a single person.
+It gives the camera the correct position for height.
+Because of COVID-19, we could not provide the right camera and lens (25 mm) to test if 2 m is the correct length but in figure \ref{fig:fromStand} is a photo taken from the camera stand with Samsung Galaxy S7 phone.
+%but in the test, the correct camera was missing and therefore it needs to be tested again.
+
+%The lights are stable and it is possible to change the height of them if necessary (see figure \ref{fig:LightonHannes}).
+The light was tested in too much light and therefore we could not determent for sure if it's good or not.
+
+
+%For a person with no experience of the Lightboard Ready, it is simply to move it without help in the correct location and takes less than 5 minutes to set it up.
+%Equally easy is to fold it together and transport it to storage.
+
+The survey tells that people think that it is easy to fold and with wheels that it is easy to transport it. 
+Most people like the look of the Lightboard Ready.
+
+Due to the COVID-19 Pandemic, we had limited material and option to test our product, we wanted to make a better survey by letting people try the Lightboard Ready and get better and more reliable data and feedback.
+
 	\bibliography{iopart-num-demo,references,references-ad}
+\clearpage
+%\usepackage{appendix}
+\appendix
+\section{Graphics from physical test}\label{PhysicalTestPic}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{graphicsFromGardabae/FoldingLightBord.jpg}
+	\caption{Camera stand folded}
+	\label{fig:fold}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{graphicsFromGardabae/Light.jpg}
+	\caption{Light folded to glass and camera stand mounted}
+	\label{fig:lightfold}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{graphicsFromGardabae/SideBar.jpg}
+	\caption{Sidebar for light}
+	\label{fig:sidebar1}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{graphicsFromGardabae/SidebarInside.jpg}
+	\caption{Sidebar for light folded}
+	\label{fig:sidebar2}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{graphicsFromGardabae/MyndAfStandi.jpg}
+	\caption{Photo taken from camera stand with Samsung Galaxy S7}
+	\label{fig:fromStand}
+\end{figure}
+
+\section{Graphics from physical model}
+\begin{figure}[H]
+	\centering 
+	\includegraphics[width=1\linewidth]{pappi_1.jpg}
+	\caption{Physical model}
+	\label{fig:pappi_1}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{pappi_3.jpg}
+	\caption{Physical model, folded together}
+	\label{fig:pappi_3}
+\end{figure}
+	
+	
+%	\section{Experiments}
+	
+%	\section{Results and Discussion}
+	
+%	\section{Conclusion}
+	
+%	\subsection{Future work}
+	
+%	\subsection{Summary}
+	
+%	\section*{References}
+
 	
 \end{document}
 
