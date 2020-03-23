@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.21)  20 MAR 2020 18:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.21)  20 MAR 2020 19:02
 entering extended mode
 **./icad-template.tex
 (icad-template.tex
@@ -1062,15 +1062,6 @@ ryshadows.blur.code.tex"  v1.02, 2012/12/09
 \pgfbs@fading@count=\count328
 ) (icad-template.aux
 
-LaTeX Warning: Label `CN' multiply defined.
-
-
-LaTeX Warning: Label `FR' multiply defined.
-
-
-LaTeX Warning: Label `fig:matrix' multiply defined.
-
-
 LaTeX Warning: Label `PS' multiply defined.
 
 
@@ -1334,7 +1325,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  30696 strings out of 492448
  615362 string characters out of 3119979
- 623485 words of memory out of 3000000
+ 623484 words of memory out of 3000000
  34680 multiletter control sequences out of 15000+200000
  544738 words of font info for 71 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1356,7 +1347,7 @@ al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/berg
 u/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C
 :/Users/bergu/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmtt9.pfb>
-Output written on icad-template.pdf (19 pages, 1475350 bytes).
+Output written on icad-template.pdf (19 pages, 1475352 bytes).
 PDF statistics:
  247 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
